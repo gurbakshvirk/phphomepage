@@ -26,7 +26,7 @@ $sql= "INSERT INTO `trip`.`trip` ( `name`, `age`, `gender`, `email`, `phone`, `o
 //  VALUES ('test', '23', 'male', 'email@gmail.com', '1111111111', 'nknknnhbvjkjdfm ', current_timestamp());
 
 
-if($con->query($sql) == true){
+if($con->query($sql) === true){
 // echo "Successfully inserted";
 
 $insert=true;
@@ -53,11 +53,11 @@ $con->close();
 <body>
     <img class="bg" src="bg.jpg " alt="IIT Kharagpur">
     <div class="container">
-        <h1>Welcome to iit kharagpur us trip form</h1>
-        <p>enter your details and submit this form to confirm your participation in the trip</p>
+        <h1>Welcome to Punjabi University Patiala USA Trip Form</h1>
+        <p>Enter your details and submit this form to confirm your participation in the trip</p>
        
        <?php
-       if($insert==true){
+       if($insert == true){
         echo "<p class='submitMSG'>Thanks for submitting your form. 
         We are happy to see you joining the us trip.</p>";}
        ?>
